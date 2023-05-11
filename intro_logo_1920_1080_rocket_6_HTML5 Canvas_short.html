@@ -31,69 +31,6 @@
     canvas {
         display:block;
     }
-	video::-webkit-media-controls {
-  		display:none !important;
-  		-webkit-appearance:none;
-	}
-
-	video::-webkit-media-controls-overlay-play-button {
-      display: none;
-    }
-	/* This used to work for the parent element of button divs */
-/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
-
-*::-webkit-media-controls-panel {
-  display: none!important;
-  -webkit-appearance: none;
-}
-
-/* Old shadow dom for play button */
-
-*::-webkit-media-controls-play-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
-
-/* New shadow dom for play button */
-
-/* This one works! */
-video::-webkit-media-controls-play-button {
-    display: none;
-}
-
-*::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
-
-.video-background::-webkit-media-controls-panel,
-.video-background::-webkit-media-controls-start-playback-button {
-    display: none !important;
-}
-
-video::-webkit-media-controls {
-    opacity: 0;
-}
-
-video::-webkit-media-controls {
-    display:none !important;
-}
-
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-}
-
-.media-controls-container {
-display: none !important;
-}
-
-video::-webkit-media-controls-panel {
-display: none !important;
-opacity: 1 !important;}
-
-video {
-  pointer-events: none;
-}
 
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
@@ -141,6 +78,12 @@ function handleComplete(evt,comp) {
 
     fnStartAnimation();
 }
+//video
+video=getElementsByTagName('video');
+function removeControls(video){
+  video.removeAttribute('controls');
+}
+window.onload=removeControls(video);
 </script>
 
 <!-- write your code here -->
