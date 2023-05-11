@@ -68,6 +68,8 @@ function handleComplete(evt,comp) {
     fnStartAnimation = function() {
         stage.addChild(exportRoot);
         createjs.Ticker.framerate = lib.properties.fps;
+		exportRoot.autoPlay = true;
+		exportRoot.nextStage = false;
         createjs.Ticker.addEventListener("tick", stage);
     }        
     //Code to support hidpi screens and responsive scaling.
