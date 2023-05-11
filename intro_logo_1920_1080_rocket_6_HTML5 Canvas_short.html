@@ -31,12 +31,18 @@
     canvas {
         display:block;
     }
+	video::-webkit-media-controls {
+  display: none;
+}
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
 	/* .media-controls-container, .media-controls-container * {
 		display: none !important;
 	} */
 
 </style>
-<script>
+<!-- <script>
 var intervalId = setInterval(function() {
   var video = document.getElementById("video");
   if (video) {
@@ -45,7 +51,7 @@ var intervalId = setInterval(function() {
     clearInterval(intervalId);
   }
 }, 1000);
-</script>
+</script> -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script src="intro_logo_1920_1080_rocket_6_HTML5 Canvas_short.js?1683249253220"></script>
 <script>
