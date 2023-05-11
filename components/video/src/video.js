@@ -32,7 +32,7 @@
       return $.extend(this.options, { id: "video" + _widgetID++ });
     },
     getCreateString: function () {
-      return "<div><video muted playsinline/></div>";
+      return "<div><video muted playsinline autoplay/></div>";
     },
     getProperties: function () {
       return this._props;
