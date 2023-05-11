@@ -57,6 +57,9 @@
 /* New shadow dom for play button */
 
 /* This one works! */
+video::-webkit-media-controls-play-button {
+    display: none;
+}
 
 *::-webkit-media-controls-start-playback-button {
   display: none!important;
@@ -70,6 +73,10 @@
 
 video::-webkit-media-controls {
     opacity: 0;
+}
+
+video::-webkit-media-controls {
+    display:none !important;
 }
 
 video::-webkit-media-controls-start-playback-button {
