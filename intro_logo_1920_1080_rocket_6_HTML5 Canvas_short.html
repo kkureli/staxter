@@ -42,16 +42,16 @@ video::-webkit-media-controls-start-playback-button {
 	} */
 
 </style>
-<!-- <script>
-var intervalId = setInterval(function() {
-  var video = document.getElementById("video");
-  if (video) {
-    var mediaControls = document.getElementsByClassName("media-controls-container")[0];
-    mediaControls.style.display = "none";
-    clearInterval(intervalId);
-  }
-}, 1000);
-</script> -->
+<script>
+	setInterval(() => {
+		
+		let video=document.querySelector('video');
+		function removeControls(video){
+		  video.removeAttribute('controls');
+		}
+		window.onload=removeControls(video);
+	}, 1000);
+</script>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script src="intro_logo_1920_1080_rocket_6_HTML5 Canvas_short.js?1683249253220"></script>
 <script>
