@@ -16,21 +16,25 @@
 	/* This used to work for the parent element of button divs */
 /* But it does not work with newer browsers, the below doesn't hide the play button parent div */
 video::-webkit-media-controls-start-playback-button {
-  display: none;
+  display: none!important;
 }
 
-video::-webkit-media-controls-play-button {
-  display: none;
+video::-webkit-media-controls-enclosure {
+  overflow: hidden!important;
 }
 
-video::-webkit-media-controls-timeline {
-  display: none;
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider {
+  display: none!important;
 }
 
-video::-webkit-media-controls-volume-slider-container {
-  display: none;
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-fullscreen-button {
+  display: none!important;
 }
-
     body {
         overflow:hidden;
         margin:0;
