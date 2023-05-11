@@ -31,11 +31,19 @@
     canvas {
         display:block;
     }
-	.media-controls-container, .media-controls-container * {
+	/* .media-controls-container, .media-controls-container * {
 		display: none !important;
-	}
+	} */
 
 </style>
+<script>
+	var video = document.getElementById("video");
+
+video.addEventListener("loadedmetadata", function() {
+  var controls = document.getElementsByClassName("media-controls-container")[0];
+  controls.style.display = "none";
+});
+</script>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script src="intro_logo_1920_1080_rocket_6_HTML5 Canvas_short.js?1683249253220"></script>
 <script>
@@ -81,12 +89,6 @@ function handleComplete(evt,comp) {
 
     fnStartAnimation();
 }
-//video
-video=getElementsByTagName('video');
-function removeControls(video){
-  video.removeAttribute('controls');
-}
-window.onload=removeControls(video);
 </script>
 
 <!-- write your code here -->
