@@ -21,7 +21,7 @@
     _attrs: [
       "id",
       "src",
-      "controls",
+      // "controls",
       "autoplay",
       "loop",
       "class",
