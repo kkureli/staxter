@@ -306,7 +306,7 @@ if (reversed == null) { reversed = false; }
 		
 		video.addEventListener("timeupdate", function() {
 		  if (video.currentTime >= 13) {
-		    mainTimeline.play();
+		    // mainTimeline.play();
 		    video.removeEventListener("timeupdate", arguments.callee);
 		  }
 		});
