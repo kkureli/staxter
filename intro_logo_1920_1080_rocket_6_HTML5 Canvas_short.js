@@ -316,7 +316,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(803));
 
 	// Layer_1
-	this.video_b = new lib.an_Video({'id': 'video_b', 'src':'videos/INTRO_2_60fps_fix_opt.mp4', 'autoplay':true,  'muted':true, 'loop':false, 'poster':'', 'preload':false, 'class':'video'});
+	this.video_b = new lib.an_Video({'id': 'video_b', 'src':'videos/INTRO_2_60fps_fix_opt.mp4', 'autoplay':true, 'muted':true, 'loop':false, 'poster':'', 'preload':false, 'class':'video'});
 
 	this.video_b.name = "video_b";
 	this.video_b.setTransform(960,540,4.8,3.6,0,0,0,200,150);
