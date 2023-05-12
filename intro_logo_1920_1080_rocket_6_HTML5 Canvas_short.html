@@ -41,17 +41,36 @@ video::-webkit-media-controls-start-playback-button {
 	/* .media-controls-container, .media-controls-container * {
 		display: none !important;
 	} */
+    video::-webkit-media-controls-start-playback-button {
+  display: none!important;
+}
+
+video::-webkit-media-controls-play-button {
+  display: none!important;
+}
+
+video::-webkit-media-controls-enclosure {
+  overflow: hidden!important;
+  width: 0!important;
+  height: 0!important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none!important;
+  opacity: 0!important;
+  height: 0!important;
+}
 
 </style>
 <script>
-	setInterval(() => {
+	// setInterval(() => {
 		
-		let video=document.querySelector('video');
-		function removeControls(video){
-		  video.removeAttribute('controls');
-		}
-		window.onload=removeControls(video);
-	}, 1000);
+	// 	let video=document.querySelector('video');
+	// 	function removeControls(video){
+	// 	  video.removeAttribute('controls');
+	// 	}
+	// 	window.onload=removeControls(video);
+	// }, 1000);
 </script>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script src="intro_logo_1920_1080_rocket_6_HTML5 Canvas_short.js?1683249253220"></script>
