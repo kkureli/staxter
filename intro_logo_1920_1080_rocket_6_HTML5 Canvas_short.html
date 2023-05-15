@@ -14,6 +14,7 @@
     <title>intro_logo_1920_1080_rocket_6_HTML5 Canvas_short</title>
     <style>
       body {
+        font-family: "Rubik", sans-serif;
         overflow: hidden;
         margin: 0;
         padding: 0;
@@ -39,33 +40,75 @@
         display: none;
       }
       .new-footer {
-        height: 90px;
+        /* height: 130px; */
         width: 100%;
-        background-color: #1e4965;
+        background-color: #044a68;
         position: absolute;
         bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* padding-bottom: 14px; */
+
+        visibility: hidden;
+      }
+      .copyright {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        visibility: hidden;
+        padding-right: 10px;
+
+      }
+      .new-footer div:nth-of-type(1) {
+        align-self: center;
+        justify-content: center;
+        display: flex;
+      }
+      .new-footer h4 {
+        font-size: 30px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        line-height: 4px;
+        color: white;
       }
       .new-footer p {
         color: white;
-        font-size: 22px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        margin-top: 14px;
+        margin-bottom: 14px;
       }
-      .footer-second {
+      .footer-links {
         display: flex;
         flex-direction: row;
-        /* width: 80%; */
-      }
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
 
-      .footer-second p:nth-of-type(2) {
-        margin-left: 10px;
       }
       a {
-        color: white;
+        text-decoration: none;
       }
+      .footer-links p:nth-of-type(2) {
+        margin-left: 5px;
+      }
+      .footer-links p:nth-of-type(3) {
+        margin-left: 5px;
+      }
+      .copyright p {
+        color: #ffffff8c;
+      }
+      .copyright a {
+        color: #ffffff8c;
+      }
+      @media only screen and (max-width: 600px) {
+        .copyright{
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+}
+
     </style>
     <script>
       setInterval(() => {
@@ -77,7 +120,7 @@
       }, 1000);
       setTimeout(() => {
         let footer = document.querySelector(".new-footer");
-        footer.style.visibility = 'visible'
+        footer.style.visibility = "visible";
       }, 13000);
     </script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
@@ -159,7 +202,6 @@
     >
       <canvas
         id="canvas"
-
         height="1080"
         style="
           position: absolute;
@@ -182,19 +224,22 @@
       ></div>
     </div>
     <div class="new-footer">
-      <div class="footer-first">
-        <p>
-          © 2017-2023 Staxter Technologies GmbH. <br />
-          All rights reserved.
-        </p>
+      <div>
+        <h4>Coming soon</h4>
       </div>
-      <div class="footer-second">
-        <p><a target="_blank" href="impressum.html">Impressum</a></p>
-        <p>
-          <a target="_blank" href="datenschutzerklaerung.html">
-            Datenschutzerklärung</a
-          >
-        </p>
+      <div class="copyright">
+        <div class="footer-cr">
+          <p>© 2017-2023 Staxter Technologies GmbH. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <p><a target="_blank" href="impressum.html">Impressum</a></p>
+          <p>|</p>
+          <p>
+            <a target="_blank" href="datenschutzerklaerung.html">
+              Datenschutzerklärung</a
+            >
+          </p>
+        </div>
       </div>
     </div>
   </body>

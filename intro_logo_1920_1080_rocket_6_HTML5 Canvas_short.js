@@ -274,7 +274,7 @@ if (reversed == null) { reversed = false; }
 	this.lnk_1.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// Layer_1
-	this.text = new cjs.Text("© 2017-2023 Staxter Technologies GmbH. All rights reserved.", "40px 'Rubik Light'", "#FFFFFF");
+	this.text = new cjs.Text("© 2017-2023 Staxter Technologies GmbH. All rights reserved.", "20px 'Rubik Light'", "#FFFFFF");
 	this.text.lineHeight = 27;
 	this.text.lineWidth = 1028;
 	this.text.parent = this;
