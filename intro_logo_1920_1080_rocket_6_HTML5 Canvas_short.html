@@ -49,7 +49,7 @@
         padding-right: 10px;
         /* padding-bottom: 14px; */
 
-        visibility: hidden;
+        /* visibility: hidden; */
       }
       .copyright {
         display: flex;
@@ -101,12 +101,17 @@
       .copyright a {
         color: #ffffff8c;
       }
-      @media only screen and (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 992px) {
         .copyright{
             display: block;
-            align-items: center;
-            justify-content: center;
+            justify-content: space-around;
         }
+        @media screen and (orientation:landscape) {
+          .new-footer p{
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+}
 }
 
     </style>
